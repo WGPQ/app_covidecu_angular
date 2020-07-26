@@ -1,0 +1,75 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a routerLink="/dash" class="brand-link">
+    <img src="assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      style="opacity: .8">
+    <span class="brand-text font-weight-light">AdminLTE 3</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="assets/img/user.jpg" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info">
+        <a routerLink="/dash/home" class="d-block">Alexander Pierce</a>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item">
+          <a routerLink="/dash/country" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <i class="nav-icon fas fa-city"></i>
+            <p>Provincia</p>
+          </a>
+        </li>
+        <li class="nav-header">
+          <p>CASOS COVID-19</p>
+        </li>
+        
+        <li class="nav-item">
+          <a routerLink="/dash/casesc"  class="nav-link">
+            <i class="far fa-edit nav-icon"></i>
+            <p>Ingresar casos</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a  routerLink="/dash/home"  class="nav-link">
+            <i class="far fa-eye nav-icon"></i>
+            <p>Visualizar casos</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a  routerLink="/dash/home"  class="nav-link">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>Estadistica casos</p>
+          </a>
+        </li>
+        
+        <li class="nav-header">
+          <p>MAS</p>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/dash/calendar" class="nav-link" routerLinkActive="active">
+            <i class="nav-icon far fa-calendar-alt"></i>
+            <p>Calendario</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/dash/users" class="nav-link" routerLinkActive="active">
+            <i class="nav-icon fas fa-users"></i>
+            <p>Usuarios</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>

@@ -1,0 +1,12 @@
+<h1 class="container">ELEMPLO CRUD</h1>
+
+<div class="containe">
+    <button class="btn btn-success" (click)="oncreate()">CREAR</button>
+    <button class="btn btn-success" (click)="onView()">VISTA</button>
+    <p *ngIf="!vista">
+        HOLA WILLIAM AQUI VAS A MOSTRAS
+    </p>
+    <p *ngIf="vista">
+        AQUI VAS A CREAR
+    </p>
+</div>
